@@ -25,15 +25,7 @@ Potree.webgl = {
 	vbos: {}
 };
 
-Potree.scriptPath = null;
-if (document.currentScript.src) {
-	Potree.scriptPath = new URL(document.currentScript.src + '/..').href;
-	if (Potree.scriptPath.slice(-1) === '/') {
-		Potree.scriptPath = Potree.scriptPath.slice(0, -1);
-	}
-} else {
-	console.error('Potree was unable to find its script path using document.currentScript. Is Potree included with a script tag? Does your browser support this function?');
-}
+Potree.scriptPath = __dirname;
 
 Potree.resourcePath = Potree.scriptPath + '/resources';
 
