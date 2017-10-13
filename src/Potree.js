@@ -1,4 +1,4 @@
-function Potree() {
+window.Potree = function Potree() {
 
 }
 Potree.version = {
@@ -926,3 +926,4 @@ Potree.DEMRenderer = class{
 	}
 };
 */
+module.exports = Potree;

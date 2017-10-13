@@ -1,9 +1,9 @@
 {
-    "name": "potree",
-    "private": true,
-    "version": "0.0.1",
+    "name": "gurvinder-potree",
+    "private": false,
+    "version": "0.0.4",
     "main": "build/potree/potree.js",
-    "description": "WebGL point cloud viewer",
+    "description": "WebGL point cloud viewer - customized",
     "scripts": {
         "lint": "eslint src",
         "test": "npm run lint"
