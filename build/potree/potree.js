@@ -14464,8 +14464,8 @@ Potree.Scene = class extends THREE.EventDispatcher {
         let light = new THREE.AmbientLight(0x555555); // soft white light
         this.scenePointCloud.add(light);
 
-        let grid = Potree.utils.createGrid(5, 5, 2);
-        this.scene.add(grid);
+        //let grid = Potree.utils.createGrid(5, 5, 2);
+        //this.scene.add(grid);
 
         { // background
             // var texture = THREE.ImageUtils.loadTexture( Potree.resourcePath + '/textures/background.gif' );
@@ -15789,8 +15789,7 @@ Potree.Viewer = class PotreeViewer extends THREE.EventDispatcher {
                 }
 
                 message += "===================\n";
-
-                console.log(message);
+ 
 
                 performance.clearMarks();
                 performance.clearMeasures();
